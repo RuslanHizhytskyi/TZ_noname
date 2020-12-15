@@ -1,0 +1,25 @@
+.form
+  img.form__logo(src="img/logo.jpg", alt="Form logo")
+  p.form__message_bold You’re one step away from joining our elite trading team
+  p.form__message_small Just fill in the fields below with your personal&nbsp;data
+  form.form__form(action="server.php", method="POST")
+    label.form__label.form__label_name
+      input.form__input(type="text" name="name" placeholder="First Name")
+    label.form__label.form__label_name
+      input.form__input(type="text" name="surname" placeholder="Last Name")
+    label.form__label.form__label_email
+      input.form__input(type="text" name="email" placeholder="Email")
+    label.form__label.form__label_select
+      select.form__input.form__input_select(name="country")
+        option(selected value="Spanish") Spanish
+        option(value="German") German
+        option(value="French") French
+        option(value="Russian") Russian
+        option(value="Hungarian") Hungarian
+        option(value="Italian") Italian
+        option(value="Arabic") Arabic
+    label.form__label.form__label_phone
+      input.form__input.form__input_pref(type="tel" name="prefix" placeholder="380")
+      input.form__input.form__input_phone(type="tel" name="phone" placeholder="Phone")
+    button.form__button.btn Try a 14-day trial period
+  p.form__info You will be contacted shortly by one of our trading mentors.

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.2;
+}
+html{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+button {
+  display: block;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include rm(480) {
+    max-width: none;
+    width: 480px;
+  }
+
+  @include rm(640) {
+    width: 640px;
+  }
+
+  @include rm(768) {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include rm(1024) {
+    width: 1024px;
+  }
+
+  @include rm(1220) {
+    width: 1080px;
+  }
+}
+
+.title {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+
+  @include rm(480) {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  @include rm(768) {
+    font-size: 26px;
+  }
+
+  @include rm(1024) {
+    font-size: 28px;
+  }
+
+  @include rm(1220) {
+    font-size: 30px;
+  }
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
+.text_extra_bold {
+  font-weight: 800;
+}
+
+.text_nowrap {
+  white-space: nowrap;
+}
+
+
+br {
+  line-height: 1;
+  font-size: 0;
+}
+
+.btn {
+  max-width: 510px;
+  width: 100%;
+  background: linear-gradient(to top, #99cc33 0%, #ccff33 100%);
+  border-top: 1px solid #fff;
+  font-weight: 800;
+  text-shadow: 0 1px 0 #fff;
+}

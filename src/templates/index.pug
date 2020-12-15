@@ -1,0 +1,20 @@
+extends settings/layout
+
+prepend html
+  - const lang = "en";
+
+prepend head
+  - const pageTitle = "Some title";
+  //- - const themeColor = "#ffffff";
+
+append head
+
+append content
+  include components/main
+  include components/offer
+  include components/start
+  include components/footer
+
+append scripts
+  //- script(src="https://179523.selcdn.ru/public/prod-scripts/cis_footer.js")
+  //- script(defer src="https://179523.selcdn.ru/public/delivery-banner/banner.js")
