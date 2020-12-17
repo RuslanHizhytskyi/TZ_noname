@@ -4,6 +4,16 @@
   color: #666;
   background: #000;
   &__text {
+    max-width: 420px;
+    margin: 0 auto;
     line-height: 20px;
+    @include rm(1024) {
+      max-width: none;
+    }
+    &_first {
+      @include rm(480) {
+        margin-bottom: 15px;
+      }
+    }
   }
 }

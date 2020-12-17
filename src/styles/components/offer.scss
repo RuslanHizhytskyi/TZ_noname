@@ -1,17 +1,33 @@
 .offer {
   padding: 37px 0 47px;
   background: url(../img/bg_offer_mob.jpg) no-repeat center bottom / cover; 
+  @include rm(480) {
+    background: url(../img/bg_offer.jpg) no-repeat center bottom / cover; 
+  }
   &__title {
     margin-bottom: 27px;
     letter-spacing: -0.4px;
   }
   &__list {
+    max-width: 420px;
+    margin: 0 auto;
     list-style: none;
     text-align: center;
+    @include rm(1024) {
+      max-width: none;
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__item {
     &:not(:last-child) {
       margin-bottom: 57px;
+      @include rm(1024) {
+        margin-bottom: 0;
+      }
+    }
+    @include rm(1024) {
+      padding: 0 10px;
     }
   }
   &__img {
