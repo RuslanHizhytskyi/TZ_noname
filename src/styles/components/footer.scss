@@ -3,16 +3,31 @@
   text-align: center;
   color: #666;
   background: #000;
+  @include rm(1024) {
+    padding: 41px 0;
+  }
   &__text {
     max-width: 420px;
     margin: 0 auto;
+    font-size: 14px;
     line-height: 20px;
     @include rm(1024) {
       max-width: none;
+      padding-left: 13px;
+      letter-spacing: 0.2px;
     }
     &_first {
       @include rm(480) {
         margin-bottom: 15px;
+      }
+      @include rm(1024) {
+        margin-bottom: 19px;
+      }
+    }
+    br {
+      display: none;
+      @include rm(1024) {
+        display: inline-block;
       }
     }
   }

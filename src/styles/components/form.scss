@@ -48,6 +48,11 @@
   &__form {
     margin-bottom: 8px;
   }
+  &__phonewrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
   &__label {
     position: relative;
     display: flex;
@@ -74,19 +79,23 @@
       &::before {
         background: url(../img/icon_country.png) no-repeat center center / contain;
       }
-      &::after {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        top: calc(50% - 4px);
-        right: 18px;
-        border: 7px solid transparent;
-        border-top-color: #000;
-      }
     }
     &_phone {
-      margin-bottom: 20px;
+      width: 60%;
+      margin-bottom: 0;
+      @include rm(480) {
+        width: 66%;
+      }
+      &::before {
+        content: none;
+      }
+    }
+    &_prefix {
+      width: 40%;
+      margin-bottom: 0;
+      @include rm(480) {
+        width: 34%;
+      }
       &::before {
         background: url(../img/icon_phone.png) no-repeat center center / contain;
       }
@@ -97,23 +106,15 @@
     padding: 13px 10px 13px 50px;
     line-height: 24px;
     background: #fff;
-    outline: none;
     &_select {
       appearance: none;
+      background: #fff url(../img/icon_arrow.png) no-repeat right 16px center;
     }
-    &_pref {
-      width: 40%;
+    &_prefix {
       border-right: 1px solid #000;
-      @include rm(480) {
-        width: 34%;
-      }
     }
     &_phone {
-      width: 60%;
       padding-left: 15px;
-      @include rm(480) {
-        width: 66%;
-      }
     }
   }
   &__button {
@@ -142,6 +143,21 @@
     @include rm(480) {
       padding: 0 10px;
       letter-spacing: 0.3px;
+    }
+  }
+  &__errormessage {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    line-height: 1;
+    color: red;
+    opacity: 0;
+    &_active {
+      height: auto;
+      opacity: 1 !important;
     }
   }
 }

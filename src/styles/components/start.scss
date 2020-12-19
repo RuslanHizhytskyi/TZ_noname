@@ -3,12 +3,19 @@
   text-align: center;
   background: url(../img/bg_start_mob.jpg) no-repeat center center / cover;
   @include rm(480) {
-    background: url(../img/bg_start.jpg) no-repeat center center / cover;
+    background: url(../img/bg_start.jpg) no-repeat center top;
+  }
+  @include rm(1024) {
+    padding: 54px 0 60px;
   }
   &__title {
     margin-bottom: 28px;
     color: #fff;
     letter-spacing: -0.5px;
+    @include rm(1024) {
+      margin-bottom: 25px;
+      letter-spacing: -0.9px;
+    }
   }
   &__link {
     position: relative;
@@ -20,15 +27,18 @@
     line-height: 1;
     color: #000;
     box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2);
-    @include rm(640) {
-      max-width: 510px;
+    @include rm(480) {
+      max-width: 420px;
       margin: 0 auto;
     }
     @include rm(768) {
       font-size: 30px;
     }
     @include rm(1024) {
+      max-width: 510px;
+      padding: 31px 0;
       font-size: 32px;
+      letter-spacing: -1px;
     }
     @include rm(1220) {
       font-size: 36px;
@@ -41,14 +51,25 @@
       height: 4px;
       right: 22px;
       background: #000;
+      @include rm(1024) {
+        width: 21px;
+        height: 5px;
+        right: 39px;
+      }
     }
     &::before {
       top: calc(50% + 4px);
       transform: rotate(-45deg);
+      @include rm(1024) {
+        top: calc(50% + 4px);
+      }
     }
     &::after {
       top: calc(50% - 4px);
       transform: rotate(45deg);
+      @include rm(1024) {
+        top: calc(50% - 7px);
+      }
     }
   }
 }
