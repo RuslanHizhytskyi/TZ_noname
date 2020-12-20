@@ -5,15 +5,14 @@
   form.form__form(action="server.php", method="POST")
     label.form__label.form__label_name
       input.form__input(type="text" name="name" placeholder="First Name" data-valid='false')
-      span.form__errormessage Please contain 3 or more chars
+      span.form__errormessage 
     label.form__label.form__label_name
       input.form__input(type="text" name="surname" placeholder="Last Name" data-valid='false')
-      span.form__errormessage Please contain 3 or more chars
+      span.form__errormessage 
     label.form__label.form__label_email
       input.form__input(type="text" name="email" placeholder="Email" data-valid='false')
-      span.form__errormessage Example: name@email.domen
+      span.form__errormessage 
     label.form__label.form__label_select
-      span.form__errormessage Please coose country
       select.form__input.form__input_select(name="country" data-valid='false')
         option(selected value="default") Choose country
         option(value="es") Spanish
@@ -22,12 +21,13 @@
         option(value="ru") Russian
         option(value="hu") Hungarian
         option(value="it") Italian
+      span.form__errormessage 
     .form__phonewrapper
       label.form__label.form__label_prefix
-        span.form__errormessage Only digits
-        input.form__input.form__input_prefix(type="text" name="prefix" placeholder="380" data-valid='false')
+        input.form__input.form__input_prefix(type="number" name="prefix" placeholder="380" data-valid='false')
+        span.form__errormessage 
       label.form__label.form__label_phone
-        span.form__errormessage Only digits, 7 or more chars
-        input.form__input.form__input_phone(type="text" name="phone" placeholder="Phone" data-valid='false')
+        input.form__input.form__input_phone(type="number" name="phone" placeholder="Phone" data-valid='false')
+        span.form__errormessage 
     button.form__button.btn Try a 14-day trial period
   p.form__info You will be contacted shortly by one of our trading mentors.
