@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Some title</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <section class="main">
+    <div class="main__container container">
+      <div class="main__wrappertext">
+        <h1 class="main__title">We teach you. <br>We fund you. </h1>
+        <p class="main__subtitle">You keep most of the profits </p>
+        <p class="main__info text_bold">We have educated more than <span class="main__info_green text_extra_bold">16,000 traders worldwide </span>since 2004 & completely funded<br>their trading accounts. You can be next</p>
+        <div class="main__somecontent"></div>
+      </div>
+      <div class="main__wraperform">
+        <div class="form"><img class="form__logo" src="img/logo.jpg" alt="Form logo">
+          <p class="form__message_bold">You’re one step away from joining our elite trading team</p>
+          <p class="form__message_small">Just fill in the fields below with your personal&nbsp;data</p>
+          <form class="form__form" action="server.php" method="POST"><label class="form__label form__label_name"><input class="form__input" type="text" name="name" placeholder="First Name" data-valid="false"><span class="form__errormessage"> </span></label><label class="form__label form__label_name"><input class="form__input" type="text" name="surname" placeholder="Last Name" data-valid="false"><span class="form__errormessage"> </span></label><label class="form__label form__label_email"><input class="form__input" type="text" name="email" placeholder="Email" data-valid="false"><span class="form__errormessage"> </span></label><label class="form__label form__label_select"><select class="form__input form__input_select" name="country" data-valid="false">
+                <option selected value="default">Choose country</option>
+                <option value="es">Spanish</option>
+                <option value="de">German</option>
+                <option value="fr">French</option>
+                <option value="ru">Russian</option>
+                <option value="hu">Hungarian</option>
+                <option value="it">Italian</option>
+              </select><span class="form__errormessage"> </span></label>
+            <div class="form__phonewrapper"><label class="form__label form__label_prefix"><input class="form__input form__input_prefix" type="number" name="prefix" placeholder="380" data-valid="false"><span class="form__errormessage"> </span></label><label class="form__label form__label_phone"><input class="form__input form__input_phone" type="number" name="phone" placeholder="Phone" data-valid="false"><span class="form__errormessage"> </span></label></div><button class="form__button btn">Try a 14-day trial period</button>
+          </form>
+          <p class="form__info">You will be contacted shortly by one of our trading mentors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="offer">
+    <div class="offer__container container">
+      <h2 class="offer__title title">What we offer</h2>
+      <ul class="offer__list">
+        <li class="offer__item"><img class="offer__img" src="img/offer_01.png" alt="Image">
+          <h3 class="offer__header">Personalized trading education</h3>
+          <div class="offer__text">
+            <p> <span class="text_bold">Meir Barak </span>and his team of highly skilled financial experts provide you with 1-on-1 personal mentorship in the art of day trading</p>
+          </div>
+        </li>
+        <li class="offer__item"> <img class="offer__img" src="img/offer_02.png" alt="Image">
+          <h3 class="offer__header">A Pro Funded Account</h3>
+          <div class="offer__text">
+            <p>Upon completion of a Self-Study course and&nbsp;a 14-day demo practice you will receive a funded trading account of up to $240,000.</p>
+            <p>Any losses are absorbed by Tradenet and you keep 80% to 95% of the profits you earn&nbsp;from trading </p>
+          </div>
+        </li>
+        <li class="offer__item"><img class="offer__img" src="img/offer_03.png" alt="Image">
+          <h3 class="offer__header">Stellar trading academy</h3>
+          <div class="offer__text">
+            <p>• Get access to extensive training materials, Demo Account, live practice sessions & much more, everything designed for your skill level</p>
+            <p>• All with as low as $500!</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="start">
+    <div class="start__container container">
+      <h2 class="start__title title">Allow us to fund you</h2><a class="start__link btn" href="">Start Now</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__container container">
+      <p class="footer__text footer__text_first">Tradenet is a Day Trading Training school that offers day and swing trading courses in stocks, CFDs, options, futures and Forex. At<br>Tradenet we specialize in day trading courses that are suitable for those familiar with day
+trading, or beginners with no prior knowledge<br>or experience with day trading.</p>
+      <p class="footer__text">We offer three different learning options; Self-Study online course, online courses in the comfort of your own home or an exclusive course,<br>one-on-one with an experienced day trading mentor at your own pace. We also offer
+online live day Trading Room and the potential for <br>funded sub-accounts for our students. Most of our services are offered in several languages,
+including: Spanish, German, French, Russian,<br>Hungarian, Italian, Arabic and more.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
